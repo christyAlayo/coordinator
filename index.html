@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+         *{margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header{
+            /* border: 2px solid red; */
+            min-height: 15vh;
+            background-color: whitesmoke;
+        }
+        header nav{
+            /* border: thin solid gold; */
+            /* background-color: plum; */
+            min-height: 15vh;
+            max-width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            font-family: Arial, Helvetica, sans-serif;
+            align-items: center;
+        }
+        header nav ul{
+            list-style-type: none;
+            /* border: thick solid orangered; */
+            min-height: 15vh;
+            width: 60%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 10px;
+            
+        }
+        header nav ul li a{
+            /* border: thick solid black; */
+            text-decoration: none;
+            color: black;
+        }
+         
+        .logo{
+            margin: 5px;
+        }
+        #bold{
+            font-weight: bolder;
+        }
+        #submit{
+            background-color: #FB651E;
+            padding: 10px 50px;
+             border-radius: 10px;
+             margin: 50px auto;
+             color: #FFFFFF;
+           
+        
+        }
+        .dropped-down{
+            position: relative;
+            display: inline-block;
+        }
+        #dropped-contents{
+            position: absolute;
+            border-radius: 10px;
+            width: 8vw;
+            background-color: whitesmoke;
+            padding: 10px 16px;
+            display: none;
+        }
+        #dropped-contents a{
+            display: flex;
+            padding: 5px;
+           line-height: 1;
+        }
+        .dropped-down:hover #dropped-contents{
+            display: block;
+        }
+        .dropped{
+            position: relative;
+            display: inline-block;
+        }
+        #dropped-downn{
+            position: absolute;
+            background-color:whitesmoke;
+            width: 13vw;
+            padding: 10px 16px;
+            border-radius: 10px;
+            display:none ;
+        }
+       #dropped-downn a{
+        display: flex;
+        padding: 5px;
+        line-height: 1;
+       }
+       .dropped:hover #dropped-downn{
+       display: block;
+       }
+       .dropped1{
+            position: relative;
+            display: inline-block;
+        }
+        #dropped-downn1{
+            position: absolute;
+            background-color:whitesmoke;
+            width: 15vw;
+            padding: 10px 16px;
+            border-radius: 10px;
+            display:none ;
+        }
+       #dropped-downn1 a{
+        display: flex;
+        padding: 5px;
+        line-height: 1;
+       }
+       .dropped1:hover #dropped-downn1{
+       display: block;
+
+       }
+       .dropped2{
+            position: relative;
+            display: inline-block;
+        }
+        #dropped-downn2{
+            position: absolute;
+            background-color:whitesmoke;
+            width: 15vw;
+            padding: 10px 16px;
+            border-radius: 10px;
+            display:none ;
+        }
+       #dropped-downn2 a{
+        display: flex;
+        padding: 5px;
+        line-height: 1;
+       }
+       .dropped2:hover #dropped-downn2{
+       display: block;
+
+       }
+       .dropped3{
+            position: relative;
+            display: inline-block;
+        }
+        #dropped-downn3{
+            position: absolute;
+            background-color:whitesmoke;
+            width: 15vw;
+            padding: 10px 16px;
+            border-radius: 10px;
+            display:none ;
+        }
+       #dropped-downn3 a{
+        display: flex;
+        padding: 5px;
+        line-height: 1;
+       }
+       .dropped3:hover #dropped-downn3{
+       display: block;
+
+       }
+       #button{
+        background-color: orangered;
+       }
+       #big-container{
+        padding-left: 50PX;
+       }
+       #text{
+        margin-left: 10%;
+       }
+       .container2{
+     height: 50vh;
+     background-color: #F5F5EE;
+       }
+       .container2 div{
+        height: 20vh;
+        width: 50vh;
+        background-color: white;
+        border-radius: 10px;
+        padding-left: 20px;
+        padding-top: 20px;
+       }
+        
+       
+    </style>
+</head>
+<body>
+    <header>
+          <nav>
+            <div class="logo"><img src="./PICTURES/ycordinator logo.png" alt="" height="60px" width="60px"></div>
+            <ul>
+                <li class="dropped-down"><a href="">Accelerator</a>
+                    <div id="dropped-contents">
+                       <a href="">About</a>
+                       <a href="">Apply</a>
+                       <a href="">FAQ</a>
+                       <a href="">People</a>
+                       <a href="">YC Blog</a>
+                    </div>
+                </li>
+                <li class="dropped"><a href="">Companies</a>
+                    <div id="dropped-downn">
+
+                     <a href="">startup Directory</a>
+                     <a href="">Top Companies</a>
+                     <a href="">Revenue  </a>
+                     <a href="">Valuation</a>
+                     <a href="">Founder Directory</a>
+                     <a href="">launch YC</a>
+                    </div>
+                </li>
+                <li class="dropped1"><a href="">Startup Jobs</a>
+                    <div id="dropped-downn1">
+                      <a href="">All jobs</a>
+                      <a href="">Engineering</a>
+                      <a href="">Operation</a>
+                      <a href="">Markerting</a> 
+                      <a href="">sales</a>
+                      <a href="">career Coaching</a>
+                      <a href="">pinoneer Program 2023</a>
+                      <a href="">StartUp Job Guide</a>
+                      <a href="">YC startup Jobs Blog</a>
+                      <a href="">Upcoming Event</a>
+                    </div>
+                </li>
+                <li><a href="">Find a Co-Founder</a></li>
+
+                <li class="dropped2"><a href="">libray</a>
+                <div id="dropped-downn2">
+                <a href="">startup school</a>
+                </div>
+            </li>
+                <li><a href=""></a>SAFE</li>
+                <li class="dropped3"><a href="">Resources</a>
+                    <div id="dropped-downn3">
+                    <a href="">Event Calender</a>
+                    <a href="">Newsletter</a>
+                    <a href="">For investors</a>
+                    <a href="">Hacker News</a>
+                    </div>
+                </li>
+            </ul>
+            <div>Apply for <span id="bold">W2024</span> Batch.</div>
+            <div><a href="">
+                <input type="button" id="submit" value="Apply">
+            </a>
+            </div>
+          </nav>
+    </header>
+
+    <div class="container">
+      <div class="row">
+       <div class="col">
+        <div class="">
+            <h1 style="font-family:'poppins',sans-serif;">why</h1>
+        <h1 style="font-family: 'poppins'sans-serif;" ><span style="color: orangered;">Y combinator</span></h1>
+            <p>we give startups a</p>
+            <p class="diss">disproportionate advantage</p>
+            <button type="button" class="btn  btn-lg" id="button">Apply YC</button>
+  
+
+        </div>
+        <div class="col"> 
+
+        </div>
+       
+      </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    <br><br>
+    <div class="container-fluid  d-flex justify-content-end" id="bigcontainer" >
+        <div class="container-xl mt-5 me-5 h-50 bg-danger" id="text"></div>
+        <h1 style="font-family:'poppins',sans-serif;">why</h1>
+        <h1 style="font-family: 'poppins'sans-serif;" ><span style="color: orangered;">Y combinator</span></h1>
+     
+        <div class="">
+          <p>we give startups a</p>
+          <p class="diss">disproportionate advantage</p>
+          <button type="button" class="btn  btn-lg" id="button">Apply YC</button>
+
+        </div>
+
+        <div class="h-100 w-100" id="image bg-danger" >
+        <img src="https://yc-website.s3.us-west-2.amazonaws.com/why-yc/why-y-combinator.jpg" style="height:50%; width: 100%" alt=""> 
+        </div>
+
+    </div>
+    <div class="container2 d-flex justify-content-center align-items-center p5">
+        <div class="m-4">
+            <a href=""><strong>YC top companies by list revenue</strong></a>
+            <p>congratulations to the companies recognized on the inaguraral YC Top companies list by revenue!</p>
+            </div>
+            <div class="m-4 ">
+                <a href=""><strong>The evolution of the batch</strong></a>
+                <p>An inside look with the ss2 founders.</p>
+                <div class="m-4">
+                    <a href=""><strong>the new standard deal</strong></a>
+                     <p>when company is accepted into the yc batch program, we now invest a total of $500,000.</p>
+                </div>
+    </div>
+
+
+    </div><br><br>
+
+
+    <div class="row mt-4 p-4">
+        <div class="col-sm-6 col-lg mb-3 bg-success">
+            <div class="card " >
+                <div class="card-body">
+                    <h5 class="card-title">special title treatment</h5>
+                    <p class="card-text">with the supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                 </div>
+            </div>
+        </div>
+         <div class="col-sm-6 col-md-5 col-lg">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">special title treatment</h5>
+                    <p class="card-text">with the supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                 </div>
+            </div> 
+        </div>
+    </div>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./PICTURES/ycordinator logo.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./PICTURES/solar background.jpg " class="d-block w-100" alt="..." width="500px" height="500px">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./PICTURES/fire.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
